@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,75 +6,223 @@
 
     <style>
         body {
+            margin: 0;
+            font-family: Arial, sans-serif;
             background-image: url("images/college.jpg");
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
-            font-family: Arial, sans-serif;
+            color: #3d3450;
         }
 
-        .content {
-                background-color: rgba(0, 0, 0, 0.55);
-                padding: 20px;
-                border-radius: 10px;
-                text-align: center;
+        .notice {
+            background-color: #e8b7d0;
+            color: #5b2145;
+            padding: 12px;
+            font-weight: bold;
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .notice-title {
+            background-color: #c77da8;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+
+        .main {
+            background-color: rgba(255, 245, 250, 0.92);
+            margin: 40px auto;
+            padding: 35px;
+            width: 85%;
+            max-width: 1100px;
+            border-radius: 20px;
+            box-shadow: 0 8px 25px rgba(70, 40, 70, 0.2);
+        }
+
+        .hero {
+            text-align: center;
+            background-color: #f4dce9;
+            padding: 35px 20px;
+            border-radius: 18px;
+            border: 1px solid #e4bfd4;
+        }
+
+        .tag {
+            color: #a34c83;
+            font-weight: bold;
+            letter-spacing: 2px;
         }
 
         h1 {
+            color: #653b69;
+            font-size: 42px;
+            margin: 20px 0;
+        }
+
+        .address {
+            color: #6d5b79;
+            font-size: 18px;
+        }
+
+        .details {
+            margin-top: 20px;
+        }
+
+        .details span {
+            display: inline-block;
+            background-color: #ead9f0;
+            color: #654c78;
+            padding: 10px 15px;
+            margin: 5px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        .section {
             text-align: center;
-            color: white;
-            font-size: 40px;
+            margin: 40px 0 25px;
         }
 
-        p {
-           text-align: center;
-           color: white;
-           font-size: 18px;
+        .section h2 {
+            color: #653b69;
+            font-size: 32px;
         }
 
-        h2 {
-           color: white;
-           text-align: center;
+        .section p {
+            color: #786582;
+        }
+
+        .courses {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .course {
+            background-color: #fff8fc;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(100, 60, 100, 0.12);
+            border-top: 5px solid #d49abd;
+            text-align: center;
+        }
+
+        .course h3 {
+            margin-top: 0;
+        }
+
+        .course1 h3 {
+            color: #b04f91;
+            font-family: Georgia, serif;
+        }
+
+        .course2 h3 {
+            color: #6c63b5;
+            font-family: "Courier New", monospace;
+        }
+
+        .course3 h3 {
+            color: #d17b55;
+            font-family: Verdana, sans-serif;
+        }
+
+        .course4 h3 {
+            color: #4b9b89;
+            font-family: "Trebuchet MS", sans-serif;
+        }
+
+        .course5 h3 {
+            color: #bd6680;
+            font-family: "Times New Roman", serif;
+        }
+
+        .course p {
+            color: #786582;
+            font-size: 14px;
+        }
+
+        .footer {
+            text-align: center;
+            color: #765b7e;
+            margin-top: 35px;
+            padding: 15px;
+            border-top: 1px solid #e5c8dc;
         }
     </style>
-
 </head>
 
 <body>
 
-    <div class="content">
+    <div class="notice">
+        <span class="notice-title">COLLEGE NOTICES</span>
 
-      <h1>Jain University</h1>
+        <marquee>
+            Upcoming Exams: Internal Assessment
+            | Annual Sports Meet
+            | College Cultural Fest
+        </marquee>
+    </div>
 
-      <p>
-        JAIN (Deemed-to-be University), Bengaluru, Karnataka, India
-      </p> 
+    <div class="main">
 
-      <h2>Courses Offered</h2>
+        <div class="hero">
+            <p class="tag">ABOUT JAIN UNIVERSITY</p>
 
-      <p style="color: yellow; font-family: Georgia; font-style: italic;">
-        B.Tech in Computer Science and Engineering
-      </p>
+            <h1>JAIN UNIVERSITY</h1>
 
-      <p style="color: cyan; font-family: 'Courier New'; font-weight: bold;">
-        Bachelor of Business Administration
-      </p>
+            <p class="address">
+                JAIN (Deemed-to-be University),
+                Bengaluru, Karnataka, India
+            </p>
 
-      <p style="color: orange; font-family: Verdana; font-style: italic;">
-        Bachelor of Commerce
-      </p>
+            <div class="details">
+                <span>NAAC Accredited</span>
+                <span>Bengaluru Campus</span>
+                <span>Higher Education</span>
+            </div>
+        </div>
 
-      <p style="color: lightgreen; font-family: 'Trebuchet MS'; font-weight: bold;">
-        Bachelor of Design
-      </p>
+        <div class="section">
+            <p class="tag">PROGRAMS OF STUDY</p>
+            <h2>Courses Offered</h2>
+            <p>Explore the courses offered by our university.</p>
+        </div>
 
-      <p style="color: pink; font-family: 'Times New Roman'; font-style: italic;">
-        Bachelor of Arts
-      </p>
+        <div class="courses">
 
-      <marquee>
-       Upcoming Exams: Internal Assessment starts from 15th October | Annual Sports Meet on 25th October | College Cultural Fest on 5th November
-      </marquee>
+            <div class="course course1">
+                <h3>B.Tech in Computer Science</h3>
+                <p>Computer Science and Engineering</p>
+            </div>
+
+            <div class="course course2">
+                <h3>Bachelor of Business Administration</h3>
+                <p>Business and Management Studies</p>
+            </div>
+
+            <div class="course course3">
+                <h3>Bachelor of Commerce</h3>
+                <p>Commerce and Finance</p>
+            </div>
+
+            <div class="course course4">
+                <h3>Bachelor of Design</h3>
+                <p>Design and Creative Studies</p>
+            </div>
+
+            <div class="course course5">
+                <h3>Bachelor of Arts</h3>
+                <p>Arts and Humanities</p>
+            </div>
+
+        </div>
+
+        <div class="footer">
+            <p>JAIN University | Bengaluru, Karnataka</p>
+        </div>
 
     </div>
 
